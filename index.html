@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced HTML5 Elements with Responsive styling</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo"><img src="/feb-2025-css-layouts-and-responsive-design-Victor-aseko/image/9253900.jpg" alt="My Logo"></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#form">Register</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#landscape">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <header class="header" id="home">
+    <h1>Welcome to My HTML5 Week 4 Assignment with A Responsiveness Styling</h1>
+  </header>
+
+  <main class="main-container">
+
+    <!-- Ordered List -->
+    <section class="lists">
+      <h3>Roman Numeral List</h3>
+      <ol type="i">
+        <li>Learn HTML</li>
+        <li>Practice CSS</li>
+        <li>Explore JavaScript</li>
+        <li>Continue to JavaScript Frameworks</li>
+      </ol>
+    </section>
+
+    <!-- Image -->
+    <section id="landscape">
+      <h2>Beautiful Landscape</h2>
+      <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Beautiful landscape from Pexels" />
+    </section>
+
+    <!-- Table -->
+    <section id="contacts">
+      <h2>Contact List</h2>
+      <table border="1" class="tContainer">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Add your table rows here -->
+          <tr>
+            <td>Chakin Kim</td>
+            <td>123 Elm Street</td>
+            <td>+1 123-456-7890</td>
+            <td>chakin@gmail.com</td>
+          </tr>
+          <tr><td>General Master</td>
+            <td>456 Moi Avenue</td><td>+254 734-567-890</td>
+            <td>generalmaster@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Mike Odak</td><td>789 Kisumu</td>
+            <td>+254 345-678-901</td>
+            <td>mike@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Sarah Lee</td><td>321 Birch Blvd</td>
+            <td>+1 456-789-0123</td>
+            <td>sarah@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Vincent Kamau</td>
+            <td>654 Nairobi</td>
+            <td>+254 567-890-123</td>
+            <td>vincent@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="#" method="POST">
+        <!-- Form inputs -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Choose--</option>
+          <option value="South Africa">South Africa</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Nigeria">Nigeria</option>
+        </select><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+        <label for="traveling">Traveling</label>
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Cancel">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Created for HTML5 Assignment</p>
+  </footer>
+</body>
+</html>
